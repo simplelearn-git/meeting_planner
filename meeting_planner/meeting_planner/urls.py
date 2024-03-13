@@ -23,6 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', welcome),
     path('date', date),
-    path('meetings/<int:id>', detail)
-
+    path('meetings/<int:id>', detail, name="detail")
 ]
